@@ -283,7 +283,7 @@ def main():
         if st.button("🔄 Reset Chat"):
             for key in list(st.session_state.keys()):
                 del st.session_state[key]
-            st.rerun()
+            st.experimental_rerun()
 
 if __name__ == "__main__":
     main()
